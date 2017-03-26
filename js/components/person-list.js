@@ -19,19 +19,18 @@ var Person = require('./person');
 
 
 
-
-var PersonList = function(){
-	<div className = "PersonList">
-		<Person name = 'Derek Zoolander';
-    		imageUrl = 'http://mcgrelio.com/gallery/var/albums/vacanze/capodanno2004/capodanno2004_bluesteel/derek.jpg?m=1286923065';
-    		alt = `${name} picture`;
-    		job = 'Male model'/>
-    	<Person name='Donald Kruth'
-    		imageUrl = 'http://www-cs-faculty.stanford.edu/~uno/don.gif'
-    		alt='${name} picture'
-    		job= 'some guy' />
-    </div>
-}
+var PersonList = function() {
+    return (
+        <div className="person-list">
+            <Person name="Derek Zoolander"
+                    imageUrl="http://uifaces.com/assets/static/images/zoolander.jpg"
+                    job="Male model" />
+            <Person name="Donald Knuth"
+                    imageUrl="http://www-cs-faculty.stanford.edu/~uno/don.gif"
+                    job="Clever chap" />
+        </div>
+    );
+};
 
 
 module.exports = PersonList;
